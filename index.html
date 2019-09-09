@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Fashion House - ubierz całą rodzinę w jednym miejscu!</title>
+
+	<link href="css/materialize.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script src="js/materialize/materialize.min.js"></script>
+	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBdYv8QFkmcquf4eb1NC_c6NLd3b_FUCzA'></script>
+	
+	<script type='text/javascript'>
+		function init_map()
+		{
+			var myOptions = {
+				zoom: 14,
+				center: new google.maps.LatLng( 51.23282110659215, 22.606476499999992 ),
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			map = new google.maps.Map( document.getElementById( 'gmap_canvas' ), myOptions );
+			marker = new google.maps.Marker( {
+				map: map,
+				position: new google.maps.LatLng( 51.23282110659215, 22.606476499999992 )
+			} );
+			infowindow = new google.maps.InfoWindow( {
+				content: '<strong>Fashion House Lublin</strong><br>Aleja Wincentego Witosa 32<br>20-315 Lublin<br>'
+			} );
+			google.maps.event.addListener( marker, 'click', function ()
+			{
+				infowindow.open( map, marker );
+			} );
+			infowindow.open( map, marker );
+		}
+
+		google.maps.event.addDomListener( window, 'load', init_map );
+	</script>
+</head>
+<body>
+	<nav id="page">
+		<div class="container nav-wrapper">
+			<a href="#" class="brand-logo">Fashion House</a>
+			<ul id="nav-mobile" class="right">
+				<li><a href="#">Polecane</a></li>
+				<li><a href="#">Promocje</a></li>
+				<li><a href="#">Wyprzedaże</a></li>
+				<li><a href="#">Dla niej</a></li>
+				<li><a href="#">Dla niego</a></li>
+				<li><a href="#"><i class="material-icons">local_grocery_store</i></a></li>
+				<li><a href="#"><i class="material-icons">person</i></a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="slider">
+		<ul class="slides">
+			<li>
+				<img src="images/slider-1.jpg" />
+				<div class="caption left-align">
+					<h2>Jesienna kolekcja 2019</h2>
+					<h5 class="light grey-text text-lighten-3">
+						Nie przegap najmodniejszych ciuchów z naszej jesiennej kolekcji!
+						<p>
+							<a class="btn">Przejdź do kolekcji</a>
+						</p>
+					</h5>
+				</div>
+			</li>
+			<li>
+				<img src="images/slider-2.jpg" />
+				<div class="caption left-align">
+					<h2>Jesienna wyprzedaż!</h2>
+					<h5 class="light grey-text text-lighten-3">
+						Końcówki serii przecenione nawet o 80%! Nie przegap!
+					</h5>
+				</div>
+			</li>
+			<li>
+				<img src="images/slider-3.jpg" />
+				<div class="caption left-align">
+					<h2 class="grey-text text-darken-4">Wszystko czego szukasz,<br />w jednym mmiejscu!</h2>
+					<h5 class="light grey-text text-darken-4">
+						Poszukiwanie idealnych ubrań kończy się tutaj!
+					</h5>
+				</div>
+			</li>
+			<li>
+				<img src="images/slider-4.jpg" />
+				<div class="caption left-align">
+					<h2>Wyprzedaż futer!</h2>
+					<h5 class="light grey-text text-lighten-3">Kup już teraz i zapłać tylko połowę!</h5>
+				</div>
+			</li>
+			<li>
+				<img src="images/slider-5.jpg" />
+				<div class="caption left-align">
+					<h2>Mężczyzna elegancki</h2>
+					<h5 class="light grey-text text-lighten-3">Sprawdź nasze markowe garnitury!</h5>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col xl3">
+				<div class="collection">
+					<a href="#!" class="collection-item">Polecane</a>
+					<a href="#!" class="collection-item">Promocje</a>
+					<a href="#!" class="collection-item">Dla niej</a>
+					<a href="#!" class="collection-item">Dla niego</a>
+					<a href="#!" class="collection-item">Odzież dziecięca</a>
+
+					<a href="#!" class="collection-item">Koszule</a>
+					<a href="#!" class="collection-item">Bluzy</a>
+					<a href="#!" class="collection-item">Spodnie</a>
+					<a href="#!" class="collection-item">Spódniczki</a>
+				</div>
+			</div>
+			<div class="col xl9">
+				<h3>Promocje</h3>
+				<div class="row">
+					<div class="col xl3 item">
+						<a href="#">
+							<img src="images/item-image.jpg" class="image" />
+							<header class="name">Item name</header>
+						</a>
+						<span class="rating rate-3"></span>
+						<a href="#" class="right">35 reviews</a>
+						<span class="price right-align"><s>$299</s> $199</span>
+						<a href="#" class="btn primary"><i class="material-icons left">local_grocery_store</i> Dodaj do koszyka</a>
+						
+					</div>
+					<div class="col xl3 item">
+						<a href="#">
+							<img src="images/item-image.jpg" class="image" />
+							<header class="name">Item name</header>
+						</a>
+						<span class="rating rate-3"></span>
+						<a href="#" class="right">35 reviews</a>
+						<span class="price right-align"><s>$299</s> $199</span>
+						<a href="#" class="btn primary"><i class="material-icons left">local_grocery_store</i> Dodaj do koszyka</a>
+						
+					</div>
+					<div class="col xl3 item">
+						<a href="#">
+							<img src="images/item-image.jpg" class="image" />
+							<header class="name">Item name</header>
+						</a>
+						<span class="rating rate-3"></span>
+						<a href="#" class="right">35 reviews</a>
+						<span class="price right-align"><s>$299</s> $199</span>
+						<a href="#" class="btn primary"><i class="material-icons left">local_grocery_store</i> Dodaj do koszyka</a>
+					</div>
+					<div class="col xl3 item">
+						<a href="#">
+							<img src="images/item-image.jpg" class="image" />
+							<header class="name">Item name</header>
+						</a>
+						<span class="rating rate-3"></span>
+						<a href="#" class="right">35 reviews</a>
+						<span class="price right-align"><s>$299</s> $199</span>
+						<a href="#" class="btn primary"><i class="material-icons left">local_grocery_store</i> Dodaj do koszyka</a>
+						
+					</div>
+				</div>
+
+				<h3>Polecane</h3>
+				<div class="row">
+					<div class="col xl3 item">
+						<a href="#">
+							<img src="images/item-image.jpg" class="image" />
+							<header class="name">Item name</header>
+						</a>
+						<span class="rating rate-3"></span>
+						<a href="#" class="right">35 reviews</a>
+						<span class="price right-align">$299</span>
+						<a href="#" class="btn primary"><i class="material-icons left">local_grocery_store</i> Dodaj do koszyka</a>
+						
+					</div>
+					<div class="col xl3 item">
+						<a href="#">
+							<img src="images/item-image.jpg" class="image" />
+							<header class="name">Item name</header>
+						</a>
+						<span class="rating rate-3"></span>
+						<a href="#" class="right">35 reviews</a>
+						<span class="price right-align">$299</span>
+						<a href="#" class="btn primary"><i class="material-icons left">local_grocery_store</i> Dodaj do koszyka</a>
+						
+					</div>
+					<div class="col xl3 item">
+						<a href="#">
+							<img src="images/item-image.jpg" class="image" />
+							<header class="name">Item name</header>
+						</a>
+						<span class="rating rate-3"></span>
+						<a href="#" class="right">35 reviews</a>
+						<span class="price right-align">$299</span>
+						<a href="#" class="btn primary"><i class="material-icons left">local_grocery_store</i> Dodaj do koszyka</a>
+						
+					</div>
+					<div class="col xl3 item">
+						<a href="#">
+							<img src="images/item-image.jpg" class="image" />
+							<header class="name">Item name</header>
+						</a>
+						<span class="rating rate-3"></span>
+						<a href="#" class="right">35 reviews</a>
+						<span class="price right-align">$299</span>
+						<a href="#" class="btn primary"><i class="material-icons left">local_grocery_store</i> Dodaj do koszyka</a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h3 class="center-align map-header">Odwiedź nas w naszym sklepie!</h3>
+	<div id="gmap_canvas" class="google-map"></div>
+
+	<div class="container">
+		<h4 class="center-align">Nie przegap promocji!</h4>
+		<form class="row no-margin valign-wrapper">
+			<div class="col xl3"></div>
+			<div class="input-field col xl4">
+				<input id="email" type="email" class="validate">
+				<label for="email">Zapisz się do newslettera</label>
+			</div>
+			<div class="col xl2">
+				<button class="btn">
+					<i class="material-icons left">send</i>
+					Subskrybuj
+				</button>
+			</div>
+			<div class="col xl3"></div>
+		</form>
+	</div>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col xl2 nav-links">
+					<h6 class="white-text">Kategorie</h6>
+					<ul>
+						<li><a href="#!">Polecane</a></li>
+						<li><a href="#!">Promocje</a></li>
+						<li><a href="#!">Dla niej</a></li>
+						<li><a href="#!">Dla niego</a></li>
+						<li><a href="#!">Odzież dziecięca</a></li>
+					</ul>
+				</div>
+				<div class="col xl2 nav-links">
+					<h6 class="white-text">Zakupy</h6>
+					<ul>
+						<li><a href="#!">Dostawa</a></li>
+						<li><a href="#!">TaxFree</a></li>
+						<li><a href="#!">Śledzenie przesyłki</a></li>
+						<li><a href="#!">Zwroty i reklamacje</a></li>
+					</ul>
+				</div>
+				<div class="col xl2 nav-links">
+					<h6 class="white-text">Twoje konto</h6>
+					<ul>
+						<li><a href="#!">Twój koszyk</a></li>
+						<li><a href="#!">Rejestracja</a></li>
+						<li><a href="#!">Logowanie</a></li>
+						<li><a href="#!">Edycja danych</a></li>
+						<li><a href="#!">Twoje zamówienia</a></li>
+					</ul>
+				</div>
+				<div class="col xl2 nav-links">
+					<h6 class="white-text">Informacje</h6>
+					<ul>
+						<li><a href="#!">Centrum pomocy</a></li>
+						<li><a href="#!">Regulamin sklepu</a></li>
+						<li><a href="#!">Polityka prywatności</a></li>
+						<li><a href="#!">Aktualności</a></li>
+						<li><a href="#!">Poradniki</a></li>
+						<li><a href="#!">Inwestycje</a></li>
+						<li><a href="#!">Dla firm</a></li>
+						<li><a href="#!">Zamówienia publiczne</a></li>
+					</ul>
+				</div>
+				<div class="col xl3 offset-xl1">
+					<h4 class="white-text">Masz pytania?</h4>
+					<div class="contact valign-wrapper">
+						<i class="material-icons">email</i>
+						<a href="mailto:contact@fashion-house.com">contact@fashion-house.com</a>
+					</div>
+					<div class="contact valign-wrapper">
+						<i class="material-icons">headset_mic</i>
+						<a href="callto:+48570486647">570 486 647</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2019 Created by Jakub Poliszuk
+				<a href="https://magento.com/" class="grey-text text-lighten-4 right">Powered by Magento ♥</a>
+			</div>
+		</div>
+	</footer>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const elems = document.querySelectorAll('.slider');
+
+			M.Slider.init( elems, {
+				height: 600
+			} );
+		});
+	</script>
+</body>
+</html>

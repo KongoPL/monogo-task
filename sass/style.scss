@@ -1,0 +1,107 @@
+﻿$rating-color: #ffa421;
+$rating-border-color: #219bff;
+
+
+.item
+{ 
+	img.image
+	{
+		width: 100%;
+	}
+
+	.name, .price
+	{
+		display: block;
+
+		font-weight: bold;
+	}
+
+	.name { font-size: 2rem; color: black; }
+	.price { font-size: 1.5rem; }
+	.price s { font-size: 1rem; font-weight: normal; color: #a0a0a0; }
+
+	
+	.rating
+	{
+		letter-spacing: 2px;
+
+		&::before
+		{
+			color: $rating-color;
+			text-shadow: -1px -1px $rating-color,
+				0px -1px $rating-color,
+				1px -1px $rating-color,
+				-1px 0px $rating-color,
+				1px 0px $rating-color,
+				-1px 1px $rating-color,
+				0px 1px $rating-color,
+				1px 1px $rating-color;
+		}
+
+		&::after
+		{
+			color: white;
+
+			text-shadow: -1px -1px $rating-border-color,
+				0px -1px $rating-border-color,
+				1px -1px $rating-border-color,
+				-1px 0px $rating-border-color,
+				1px 0px $rating-border-color,
+				-1px 1px $rating-border-color,
+				0px 1px $rating-border-color,
+				1px 1px $rating-border-color;
+		}
+	}
+
+	.rating.rate-3::before { content: '★★★'; }
+	.rating.rate-3::after { content: '★★'; }
+
+	.btn
+	{
+		margin: 10px 0px; 
+
+		display: block;
+	}
+}
+
+.map-header
+{
+	margin: 3rem 0px 2rem;
+}
+
+
+.google-map
+{
+	height: 500px;
+}
+
+
+.page-footer .nav-links
+{
+	a { color: #eeeeee; }
+}
+
+.page-footer .contact
+{
+	font-size: 1.25rem;
+	line-height: 2em;
+
+	a { color: white; margin-left: 10px;}
+}
+
+
+// Helpers:
+.no-margin { margin: 0px !important;}
+
+
+// Materialize changes:
+.collection a.collection-item:not(.active):hover
+{
+	color: white;
+	background-color: #4fc3f7; // primary
+}
+
+.slider .indicators .indicator-item.active
+{
+	background-color: #4fc3f7; // primary
+}

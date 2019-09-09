@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.item img.image {
+  width: 100%;
+}
+.item .name, .item .price {
+  display: block;
+  font-weight: bold;
+}
+.item .name {
+  font-size: 2rem;
+  color: black;
+}
+.item .price {
+  font-size: 1.5rem;
+}
+.item .price s {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #a0a0a0;
+}
+.item .rating {
+  letter-spacing: 2px;
+}
+.item .rating::before {
+  color: #ffa421;
+  text-shadow: -1px -1px #ffa421, 0px -1px #ffa421, 1px -1px #ffa421, -1px 0px #ffa421, 1px 0px #ffa421, -1px 1px #ffa421, 0px 1px #ffa421, 1px 1px #ffa421;
+}
+.item .rating::after {
+  color: white;
+  text-shadow: -1px -1px #219bff, 0px -1px #219bff, 1px -1px #219bff, -1px 0px #219bff, 1px 0px #219bff, -1px 1px #219bff, 0px 1px #219bff, 1px 1px #219bff;
+}
+.item .rating.rate-3::before {
+  content: "★★★";
+}
+.item .rating.rate-3::after {
+  content: "★★";
+}
+.item .btn {
+  margin: 10px 0px;
+  display: block;
+}
+
+.map-header {
+  margin: 3rem 0px 2rem;
+}
+
+.google-map {
+  height: 500px;
+}
+
+.page-footer .nav-links a {
+  color: #eeeeee;
+}
+
+.page-footer .contact {
+  font-size: 1.25rem;
+  line-height: 2em;
+}
+.page-footer .contact a {
+  color: white;
+  margin-left: 10px;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+.collection a.collection-item:not(.active):hover {
+  color: white;
+  background-color: #4fc3f7;
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: #4fc3f7;
+}
+
+/*# sourceMappingURL=css/style.css.map */
