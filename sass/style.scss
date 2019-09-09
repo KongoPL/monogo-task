@@ -2,6 +2,18 @@
 $rating-border-color: #219bff;
 
 
+@media only screen and (min-width: 993px) and (max-width: 1200px)
+{
+	nav#page .container
+	{
+		width: 100%;
+
+		padding: 0px 30px;
+	}
+}
+
+.sidenav#nav-mobile .text { padding: 0px 32px; }
+
 .item
 { 
 	img.image
@@ -78,6 +90,8 @@ $rating-border-color: #219bff;
 
 .page-footer .nav-links
 {
+	min-height: 170px;
+
 	a { color: #eeeeee; }
 }
 
@@ -88,10 +102,6 @@ $rating-border-color: #219bff;
 
 	a { color: white; margin-left: 10px;}
 }
-
-
-// Helpers:
-.no-margin { margin: 0px !important;}
 
 
 // Materialize changes:

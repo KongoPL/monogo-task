@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  nav#page .container {
+    width: 100%;
+    padding: 0px 30px;
+  }
+}
+.sidenav#nav-mobile .text {
+  padding: 0px 32px;
+}
+
 .item img.image {
   width: 100%;
 }
@@ -48,6 +58,9 @@
   height: 500px;
 }
 
+.page-footer .nav-links {
+  min-height: 170px;
+}
 .page-footer .nav-links a {
   color: #eeeeee;
 }
@@ -59,10 +72,6 @@
 .page-footer .contact a {
   color: white;
   margin-left: 10px;
-}
-
-.no-margin {
-  margin: 0px !important;
 }
 
 .collection a.collection-item:not(.active):hover {
