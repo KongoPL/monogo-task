@@ -28,7 +28,7 @@ $rating-border-color: #219bff;
 		font-weight: bold;
 	}
 
-	.name { font-size: 2rem; color: black; }
+	.name { font-size: 1.25rem; color: black; }
 	.price { font-size: 1.5rem; }
 	.price s { font-size: 1rem; font-weight: normal; color: #a0a0a0; }
 
@@ -85,6 +85,14 @@ $rating-border-color: #219bff;
 .google-map
 {
 	height: 500px;
+}
+
+@media only screen and (min-width: 601px)
+{
+	.subscribe .subscribe-button
+	{
+		margin-top: 25px;
+	}
 }
 
 
