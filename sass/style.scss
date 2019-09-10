@@ -2,13 +2,32 @@
 $rating-border-color: #219bff;
 
 
-@media only screen and (min-width: 993px) and (max-width: 1200px)
+@media only screen and (min-width: 993px) and (max-width: 1200px), 
+	only screen and (max-width: 600px)
 {
 	nav#page .container
 	{
 		width: 100%;
 
 		padding: 0px 30px;
+	}
+}
+
+@media only screen and (max-width: 600px)
+{
+	nav#page .container
+	{
+		padding: 0px 0px;
+	}
+}
+
+@media only screen and (max-width: 992px)
+{
+	nav .brand-logo
+	{
+		width: 100%;
+
+		text-align: center;
 	}
 }
 
