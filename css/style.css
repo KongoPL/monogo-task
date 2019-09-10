@@ -17,7 +17,7 @@
   font-weight: bold;
 }
 .item .name {
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: black;
 }
 .item .price {
@@ -58,6 +58,11 @@
   height: 500px;
 }
 
+@media only screen and (min-width: 601px) {
+  .subscribe .subscribe-button {
+    margin-top: 25px;
+  }
+}
 .page-footer .nav-links {
   min-height: 170px;
 }
@@ -82,5 +87,3 @@
 .slider .indicators .indicator-item.active {
   background-color: #4fc3f7;
 }
-
-/*# sourceMappingURL=css/style.css.map */
